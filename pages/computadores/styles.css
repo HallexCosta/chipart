@@ -1,0 +1,12 @@
+.container main section,
+.container main img {
+  display: block;
+}
+
+.container main section {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 25px;
+} 
+
