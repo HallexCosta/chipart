@@ -3,10 +3,22 @@
   display: block;
 }
 
-.container main section {
+.container main .banner img {
+  width: 35%;
+  height: 20px;
+  float: right; 
+}
+.container main section h1 {
+  width: 15%;
+  font-size: 20px;
+}
+.container main .banner {
   display: flex;
-  justify-content: center;
-  margin: 20px;
-  font-size: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container main .banner section {
+  display: flex;
 } 
 
