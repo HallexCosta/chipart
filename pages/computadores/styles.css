@@ -8,10 +8,18 @@
   height: 20px;
   float: right; 
 }
+
 .container main section h1 {
   width: 15%;
   font-size: 20px;
+  margin: 20px 20px;
 }
+
+.container main .banner {
+  border-top: 2px solid #6fc81e;
+  border-bottom: 2px solid #6fc81e;
+}
+
 .container main .banner {
   display: flex;
   justify-content: space-between;
