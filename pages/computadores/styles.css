@@ -30,3 +30,25 @@
   display: flex;
 } 
 
+.container main .list-product .header {
+  display: flex;
+  align-items: center;
+  height: 50px; 
+  background: #1e1e20;
+  margin: 10px 0 10px;
+}
+
+.container main .list-product legend {
+  padding: 0 20px 0;
+
+  font-size: 18px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.container main .list-product legend i:before {
+  content: '';
+  background: #6fc81e url(https://image.flaticon.com/icons/svg/57/57164.svg) no-repeat;
+}
+
