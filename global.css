@@ -105,7 +105,7 @@ header {
 }
 
 .container main nav a {
-  padding: 20px;
+  padding: 30px 20px 10px 20px;
   font-weight: 500;
   font-style: italic;
 }
