@@ -1,36 +1,39 @@
-.container main section,
-.container main img {
+.container aside .banner section h1,
+.container aside .banner img {
   display: block;
 }
 
-.container main .banner img {
-  width: 35%;
-  height: 20px;
-  float: right; 
+.container aside {
+  padding: 0 5vw 0;
 }
 
-.container main section h1 {
+.container aside .banner img {
+  width: 35%;
+  height: 20px;
+}
+
+.container aside .banner section h1 {
   width: 15%;
   font-size: 20px;
   margin: 20px 20px;
 }
 
-.container main .banner {
+.container aside .banner {
   border-top: 2px solid #6fc81e;
   border-bottom: 2px solid #6fc81e;
 }
 
-.container main .banner {
+.container aside .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container main .banner section {
+.container aside .banner section {
   display: flex;
 } 
 
-.container main .list-product .header {
+.container aside .list-product .header {
   display: flex;
   align-items: center;
   height: 50px; 
@@ -38,7 +41,7 @@
   margin: 10px 0 10px;
 }
 
-.container main .list-product legend {
+.container aside .list-product .header h1 {
   padding: 0 20px 0;
 
   font-size: 18px;
@@ -47,7 +50,7 @@
   font-weight: bold;
 }
 
-.container main .list-product legend i:before {
+.container aside .list-product .header i:before {
   content: '';
   background: #6fc81e url(https://image.flaticon.com/icons/svg/57/57164.svg) no-repeat;
 }
