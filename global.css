@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 input::placeholder {
   font-style: italic;
   font-size: 12px;
