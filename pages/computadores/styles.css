@@ -36,22 +36,59 @@
 .container aside .list-product .header {
   display: flex;
   align-items: center;
-  height: 50px; 
-  background: #1e1e20;
+  justify-content: start;
+  height: 40px; 
+  background: #222;
   margin: 10px 0 10px;
 }
 
 .container aside .list-product .header h1 {
-  padding: 0 20px 0;
-
   font-size: 18px;
   color: white;
   font-style: italic;
   font-weight: bold;
 }
 
-.container aside .list-product .header i:before {
-  content: '';
-  background: #6fc81e url(https://image.flaticon.com/icons/svg/57/57164.svg) no-repeat;
+.container aside .list-product .header span {
+  margin-left: 50px;
+}
+.container aside .list-product .header span + span {
+  margin-left: 25px;
 }
 
+.container aside .list-product .header span i {
+  color: #6fc81e;
+}
+
+.container aside .list-product section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 3fr;
+  
+  background: #fff;
+  color: black;
+  height: 350px;
+}
+
+.container aside .list-product .vertical li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  list-style: none;
+  padding: 20px 40px;
+}
+
+.container aside .list-product .vertical li a {
+  padding: 5px 5px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container aside .list-product section .cards {
+  background: #41414d;
+  color: black;
+  height: 350px;
+}
