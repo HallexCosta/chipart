@@ -39,7 +39,7 @@
   justify-content: start;
   height: 40px; 
   background: #222;
-  margin: 10px 0 10px;
+  margin: 10px 0 0;
 }
 
 .container aside .list-product .header h1 {
@@ -70,21 +70,53 @@
   height: 350px;
 }
 
-.container aside .list-product .vertical li {
+.container aside .list-product .vertical .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
+  border-bottom: 1px solid #e1e1e1;
   list-style: none;
-  padding: 20px 40px;
+  margin: 20px 20px;
+  padding: 0 10px;
+  cursor: pointer;
 }
 
-.container aside .list-product .vertical li a {
+.container aside .list-product .vertical .title:hover a {
+  transition: all .3s ease-in-out;
+}
+
+.container aside .list-product .vertical .title a {
   padding: 5px 5px;
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   font-style: italic;
+}
+
+.container aside .list-product .vertical .title:hover a {
+  color: #6fc81e;
+}
+
+.container aside .list-product .vertical .title i {
+  color: #6fc81e;
+  font-size: 12px;
+}
+
+.container aside .list-product .vertical .items {
+  margin: 20px 20px;
+  padding: 0 10px;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.container aside .list-product .vertical .items li {
+  padding: 5px;
+}
+
+.container aside .list-product .vertical .items li a {
+  color: #0e0e0e;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .container aside .list-product section .cards {
