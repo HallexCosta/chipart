@@ -90,7 +90,6 @@ header {
   font-size: 15px;
 }
 
-
 .container main {
   display: flex;
   flex-direction: column;
@@ -110,6 +109,11 @@ header {
 
 .container main nav a {
   padding: 30px 20px 10px 20px;
-  font-weight: 500;
+  font-weight: bold;
   font-style: italic;
+  transition: color .3s ease-in-out;
+}
+
+.container main nav a:hover {
+  color: #6fc81e;
 }
