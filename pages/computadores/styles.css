@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .container aside .banner section h1,
 .container aside .banner img {
   display: block;
@@ -33,6 +37,10 @@
   display: flex;
 } 
 
+.container aside .list-product {
+  background: #fff;
+}
+
 .container aside .list-product .header {
   display: flex;
   align-items: center;
@@ -64,10 +72,8 @@
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 1fr 3fr;
-  
-  background: #fff;
-  color: black;
-  height: 350px;
+ 
+  margin-bottom: 10px;
 }
 
 .container aside .list-product .vertical .title {
@@ -81,11 +87,11 @@
   cursor: pointer;
 }
 
-.container aside .list-product .vertical .title:hover a {
+.container aside .list-product section .vertical .title:hover a {
   transition: all .3s ease-in-out;
 }
 
-.container aside .list-product .vertical .title a {
+.container aside .list-product section .vertical .title a {
   padding: 5px 5px;
   color: black;
   font-size: 15px;
@@ -93,34 +99,84 @@
   font-style: italic;
 }
 
-.container aside .list-product .vertical .title:hover a {
+.container aside .list-product section .vertical .title:hover a {
   color: #6fc81e;
 }
 
-.container aside .list-product .vertical .title i {
+.container aside .list-product section .vertical .title i {
   color: #6fc81e;
   font-size: 12px;
 }
 
-.container aside .list-product .vertical .items {
+.container aside .list-product section .vertical .items {
   margin: 20px 20px;
   padding: 0 10px;
   overflow: hidden;
   max-height: 300px;
 }
 
-.container aside .list-product .vertical .items li {
+.container aside .list-product section .vertical .items li {
   padding: 5px;
 }
 
-.container aside .list-product .vertical .items li a {
+.container aside .list-product section .vertical .items li a {
   color: #0e0e0e;
   font-size: 14px;
   font-weight: 500;
 }
 
 .container aside .list-product section .cards {
-  background: #41414d;
-  color: black;
-  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  background: #fff;
+  padding: 20px 30px;
+}
+
+.container aside .list-product section .cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  padding: 20px;
+}
+
+.container aside .list-product section .cards .card:hover {
+  outline: 1px solid #6fc81e;
+}
+
+.container aside .list-product section .cards .card img {
+  align-self: center;
+  width: 230px;
+  margin-top: 0;
+}
+
+.container aside .list-product section .cards .card legend h2,
+.container aside .list-product section .cards .card legend h4 {
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+.container aside .list-product section .cards .card .subtitle-group {
+  margin: 35px 0;
+  color: #0f0f0f;
+}
+
+.container aside .list-product section .cards .card .subtitle-group h5 {
+  font-weight: 500;
+}
+
+.container aside .list-product section .cards .card .subtitle-group h5 + h5 {
+  color: gray;
+}
+
+.container aside .list-product section .cards .card button {
+  border: 0;
+  margin-top: 15px;
+  padding: 12px 15px;
+  width: 100%;
+  background: #6fc81e;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
 }

@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
   const listProducts = createListProducts()
   listProducts.changeIconAndExpandButtonCategorias()
   listProducts.addClassActivedOnLinkClicked()
+  listProducts.cloneCards(9).run()
 
   function createListProducts() {
     const buttonCategorias = document.querySelector('.container aside .list-product .vertical .title')
@@ -61,9 +62,29 @@ window.addEventListener('load', () => {
       })
     }
 
+    cloneCards = (recursive) => {
+      let controlRecursive = 0
+      const cards = document.querySelector('.cards')
+      const card = document.querySelector('.card')
+      
+      const run = () => {
+        if (controlRecursive !== Number(recursive)) {
+          cards.innerHTML += '<div class="card">' + card.innerHTML + '</div>'          
+          console.log(controlRecursive)
+          controlRecursive += 1
+          run()
+        }
+      }
+
+      return {
+        run
+      }
+    }
+
     return {
       addClassActivedOnLinkClicked,
-      changeIconAndExpandButtonCategorias
+      changeIconAndExpandButtonCategorias,
+      cloneCards
     }
   }
 })
