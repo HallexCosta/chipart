@@ -4,12 +4,12 @@
   margin: 0;
   padding: 0;
   border-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-body {
+html, body {
   width: 100%;
   height: 100%;
-  font-family: Roboto, sans-serif;
   background: #1e1e20 url(https://www.chipart.com.br/themes/chipart/assets/img/bg-body.jpg) no-repeat center top;
 }
 
@@ -27,7 +27,7 @@ input::placeholder {
   font-size: 12px;
 }
 
-input, textarea, p, label, a, section, aside {
+input, textarea, p, label, a, legend, h1, h2, h3, h4 {
   color: white;
   font-size: 15px;
   font-weight: 500;
@@ -43,6 +43,7 @@ input {
   border-right: none;
   border-bottom: 2px solid #6fc81e;
   outline: 0;
+  font-weight: 400;
 }
 
 header {
@@ -50,10 +51,10 @@ header {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 100vw;
-  grid-gap: 2vh;  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
 }
 
 .container header {
@@ -97,14 +98,11 @@ header {
   margin: 10px 0 0;
 }
 
-.container img {
-  margin-top: 8px
-}
-
 .container main nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 .container main nav a {
