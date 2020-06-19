@@ -115,3 +115,10 @@ header {
 .container main nav a:hover {
   color: #6fc81e;
 }
+
+/**
+ * HOME
+ */
+.container main img {
+  margin-top: 10px;
+}
