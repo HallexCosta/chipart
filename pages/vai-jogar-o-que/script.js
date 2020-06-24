@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
-  const { dataCards } = module.exports
+  const { itemsCard } = module.exports
 
   function createListGames(selector) {
     const cards = createCardsGroup(selector).get()
 
-    dataCards.map(({ title, image }) => {
+    itemsCard.map(({ title, image }) => {
       const card = createCard()
       const img = createElementImage().setURL(`${image.url}.${image.extension}`)
       const legend = createElementLegend().setContent(title)

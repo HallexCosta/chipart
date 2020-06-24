@@ -4,9 +4,8 @@ window.addEventListener('load', () => {
   const { path } = Helpers()
   const prefixURL = path(rootPath, 'assets', 'pages', 'vai-jogar-o-que', 'games')
 
-
   module.exports = {
-    dataCards: [
+    itemsCard: [
       {
         title: 'Battlefield 1',
         image: {
