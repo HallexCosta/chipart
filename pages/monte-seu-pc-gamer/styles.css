@@ -23,10 +23,36 @@
   justify-content: center;
 }
 
-.container aside .pc-builder-and-checkout-group {
+.container aside article {
   display: grid;
   grid-template-columns: 60vw 40vw;
   grid-template-rows: 80vh 20vh;
 
   border: 3px solid red;
+}
+
+.container aside article .pc-builder {
+  display: flex;
+  height: 100px;
+  background: #fff;
+} 
+
+.container aside article .pc-builder .image-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background: #1e1e20;  
+}
+
+.container aside article .pc-builder .image-svg #svg-object {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container aside .pc-builder-and-checkout-group .pc-builder label[for="title"] {
+  color: black;
+  font-size: 16px;  
 }
