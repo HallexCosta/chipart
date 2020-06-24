@@ -3,6 +3,7 @@
 }
 
 .container aside .banner {
+  margin-top: 10px;
   border-top: 2px solid #6fc81e;
   border-bottom: 2px solid #6fc81e;
 }
