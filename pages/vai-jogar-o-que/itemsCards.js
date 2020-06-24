@@ -2,10 +2,10 @@ window.addEventListener('load', () => {
   const rootDirectory = '../..'
   const prefixURL = `${rootDirectory}/assets`
 
-  const { Helpers } = modules.export
+  const { Helpers } = module.exports
   const { path } = Helpers()
 
-  modules.export = {
+  module.exports = {
     dataCards: [
       {
         title: 'Battlefield 1',

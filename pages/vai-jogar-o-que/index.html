@@ -60,13 +60,14 @@
   <script>
     feather.replace()
   </script>
-  <script src="../../utils/modules_export.js"></script>
+  <script src="../../utils/import.js"></script>
+  <script src="../../utils/module_exports.js"></script>
   <script src="../../utils/helpers.js"></script>
   <script src="itemsCards.js"></script>
   <script src="script.js"></script>
   <script>
     window.addEventListener('load', () => {
-      const { createListGames } = modules.export
+      const { createListGames } = module.exports
 
       requirejs(['script.js'], () => {
         createListGames('.cards-group')

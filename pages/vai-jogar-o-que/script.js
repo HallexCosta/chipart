@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-  const { dataCards } = modules.export
+  const { dataCards } = module.exports
 
   function createListGames(selector) {
     const cards = createCardsGroup(selector).get()
@@ -74,7 +74,7 @@ window.addEventListener('load', () => {
     }
   }
 
-  modules.export = {
+  module.exports = {
     createListGames
   }
 })
