@@ -6,6 +6,7 @@
   margin-top: 10px;
   border-top: 2px solid #6fc81e;
   border-bottom: 2px solid #6fc81e;
+  margin-bottom: 20px;
 }
 
 .container aside .banner section img {
@@ -23,36 +24,50 @@
   justify-content: center;
 }
 
-.container aside article {
-  display: grid;
-  grid-template-columns: 60vw 40vw;
-  grid-template-rows: 80vh 20vh;
-
-  border: 3px solid red;
+.container aside .list-items-build {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1400px;
 }
 
-.container aside article .pc-builder {
+.container aside .list-items-build .pc-builder {
   display: flex;
-  height: 100px;
-  background: #fff;
+  height: 80px;
+  border: 1px solid #2a2a2d;
 } 
 
-.container aside article .pc-builder .image-svg {
+.container aside .list-items-build .pc-builder:last-child {
+  margin-bottom: 0;
+}
+
+.container aside .list-items-build .pc-builder .svg-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  background: #1e1e20;  
+  width: 80px;
+  background: #2a2a2d;  
 }
 
-.container aside article .pc-builder .image-svg #svg-object {
+.container aside .list-items-build .pc-builder .svg-container object {
   width: 40px;
   height: 40px;
   max-width: 100%;
   max-height: 100%;
 }
 
-.container aside .pc-builder-and-checkout-group .pc-builder label[for="title"] {
-  color: black;
+.container aside .list-items-build .pc-builder label[for="title"] {
+  align-self: center;
+  margin-left: 18px;
   font-size: 16px;  
+  font-style: italic;
+  font-weight: 700;
+}
+
+.selected {
+  background: #fff
+}
+.selected label[for='title'] {
+  color: black;
 }
