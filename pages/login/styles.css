@@ -64,7 +64,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 60px 40px 60px;
 }
 
 .login-container main form {
@@ -73,7 +73,7 @@ fieldset {
   align-items: center;
   background: #fff;
   padding: 50px;
-  height: 250px;
+  height: 300px;
 } 
 
 .login-container main form .icon {
@@ -112,6 +112,7 @@ fieldset {
 }
 
 .login-container main form fieldset input {
+  color: black;
   border: 1px solid #e1e1e1; 
   margin: 15px 0;
 }
@@ -128,7 +129,6 @@ fieldset {
   background: #6fc81c;
   font-size: 16px;
   font-weight: bold;
-  font-style: italic;
   border: none;
 }
 
