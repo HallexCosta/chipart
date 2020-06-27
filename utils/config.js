@@ -1,6 +1,8 @@
-const { Helpers } = module.exports
-const { path } = Helpers()
-
 module.exports = {
-  rootPath: path('..', '..')
+  get rootPath(){
+    const { Helpers } = module.exports
+    const { path } = Helpers()
+
+    return path('..', '..')
+  }
 }
