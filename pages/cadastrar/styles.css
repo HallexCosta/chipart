@@ -1,0 +1,200 @@
+p {
+  margin-top: 10px;
+}
+
+header {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+input,
+select,
+option {
+  color: #1a1a1a;
+}
+
+input {
+  padding: 0;
+}
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: #1e1e20;
+}
+
+.login-container header .header-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  padding: 15px;
+}
+
+.login-container header .header-group .contact {
+  display: flex; 
+  align-items: center;
+}
+
+.login-container header .header-group .contact .phone-icon {
+  padding: 10px;
+  border-radius: 50%;
+  background: #6fc81c;
+}
+
+.login-container header .header-group .contact .phone-icon svg path {
+  stroke-width: 1;
+}
+
+.login-container header .header-group .contact .title {
+  color: white;
+  margin-left: 20px;
+}
+
+.login-container header .header-group .contact .title h3 {
+  font-size: 20px;
+}
+
+
+.login-container main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.login-container main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 50px;
+} 
+
+.login-container main form .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 15%;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #6fc81e;
+  margin-bottom: 20px;
+}
+
+.login-container main form .icon svg {
+  width: 40px;
+  height: 40px;
+  color: #6fc81e;
+}
+
+.login-container main form fieldset {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  height: 100%;
+}
+
+.login-container main form fieldset .gender,
+.login-container main form fieldset .birthday,
+.login-container main form fieldset .cpf,
+.login-container main form fieldset .phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container main form fieldset label[for="email"],
+.login-container main form fieldset label[for="fullname"],
+.login-container main form fieldset label[for="birthday"],
+.login-container main form fieldset label[for="gender"],
+.login-container main form fieldset label[for="cpf"],
+.login-container main form fieldset label[for="phone"],
+.login-container main form fieldset label[for="password"] {
+  color: rgba(119,119,119,.6);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.login-container main form fieldset select,
+.login-container main form fieldset input {
+  width: 90%;
+  border: 1px solid #e1e1e1; 
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.login-container main form fieldset input::placeholder {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.login-container main form fieldset button {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background: #6fc81c;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  border: none;
+}
+
+.login-container main form fieldset p {
+   color: gray;
+   font-weight: 400;
+   text-align: center;
+}
+
+.login-container main form fieldset p a {
+   color: #6fc81c;
+ }
+
+.login-container footer { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1e1e20;
+  color: #e1e1e1;
+  padding-bottom: 20px;
+}
+
+.login-container footer .developers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 50px;
+}
+
+.login-container footer .developers .title {
+  font-size: 20px;
+}
+
+.login-container footer .developers .subtitle {
+  font-weight: 400;
+}
+
+.items-group {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 15px;
+}
