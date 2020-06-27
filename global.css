@@ -27,13 +27,13 @@ input::placeholder {
   font-size: 12px;
 }
 
-input, textarea, p, label, a, legend, h1, h2, h3, h4 {
+input, select, textarea, p, label, a, legend, h1, h2, h3, h4 {
   color: white;
   font-size: 15px;
   font-weight: 500;
 }
 
-input {
+input, select {
   padding: 15px 15px 15px;
   margin-bottom: 5px;
   width: 400px;
