@@ -1,0 +1,166 @@
+p {
+  margin-top: 10px;
+}
+
+header {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+h1, h2 {
+  color: black;
+}
+
+.icon {
+  color: #6fc81c;
+}
+
+.cart-container {
+  width: 100%;
+  /*height: 100vh;*/
+}
+
+.cart-container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background: #121213;
+}
+
+.cart-container header .header-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  padding: 15px;
+}
+
+.cart-container header .header-group .contact {
+  display: flex; 
+  align-items: center;
+}
+
+.cart-container header .header-group .contact .phone-icon {
+  padding: 10px;
+  border-radius: 50%;
+  background: #6fc81c;
+}
+
+.cart-container header .header-group .contact .phone-icon svg path {
+  stroke-width: 1;
+}
+
+.cart-container header .header-group .contact .title {
+  color: white;
+  margin-left: 20px;
+}
+
+.cart-container header .header-group .contact .title h3 {
+  font-size: 20px;
+}
+
+
+.cart-container main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.cart-container main .message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 77px;
+} 
+
+.cart-container main .message-container .message-subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 250px;
+  margin: 0 350px;
+}
+
+.cart-container main .message-container .message-subcontainer .ops-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.cart-container main .message-container .message-subcontainer .ops-message .icon svg {
+  width: 78px;
+  height: 77px;
+}
+
+.cart-container main .message-container .message-subcontainer .ops-message .message {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.cart-container main .message-container .message-subcontainer .ops-message .message h1 {
+  color: #1a1a1a;
+  font-size: 40px;
+}
+
+.cart-container main .message-container .message-subcontainer .ops-message .message h2 {
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+
+.cart-container main .message-container .message-subcontainer legend {
+  width: 320px;
+  font-size: 14px;
+  height: 57;
+  color: #777;
+  font-weight: 400;
+  text-align: center;
+  margin: 35px 0;
+}
+
+.cart-container main .message-container .message-subcontainer a {
+  background: #6fc81c;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 13px;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.cart-container footer { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #121213;
+  color: #e1e1e1;
+  height: 110px;
+  /*margin-top: 117px;*/
+}
+
+.cart-container footer .developers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 50px;
+}
+
+.cart-container footer .developers .title {
+  font-size: 20px;
+}
+
+.cart-container footer .developers .subtitle {
+  font-weight: 400;
+}
