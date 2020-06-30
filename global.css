@@ -33,7 +33,7 @@ input, select, textarea, p, label, a, legend, h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-input, select {
+input, select, textarea {
   padding: 15px 15px 15px;
   margin-bottom: 5px;
   width: 400px;
