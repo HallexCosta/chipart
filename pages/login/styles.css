@@ -46,6 +46,10 @@ fieldset {
   background: #6fc81c;
 }
 
+.login-container header .header-group .contact .phone-icon svg {
+  color: black;
+}
+
 .login-container header .header-group .contact .phone-icon svg path {
   stroke-width: 1;
 }
@@ -58,7 +62,6 @@ fieldset {
 .login-container header .header-group .contact .title h3 {
   font-size: 20px;
 }
-
 
 .login-container main {
   display: flex;
