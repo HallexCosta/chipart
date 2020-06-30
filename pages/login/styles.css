@@ -147,13 +147,15 @@ fieldset {
 .login-container footer { 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 10px;
   background: #1e1e20;
   color: #e1e1e1;
   height: 100%;
 }
 
-.login-container footer .copyright {
+.login-container footer .copyright .about-us a {
+  text-decoration: underline;
 }
 
 .login-container footer .developers {

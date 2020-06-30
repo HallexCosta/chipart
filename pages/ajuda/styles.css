@@ -19,14 +19,14 @@ fieldset {
   border: 0;
 }
 
-.ajuda-container {
+.help-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.ajuda-container header {
+.help-container header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@ fieldset {
   background: #1e1e20;
 }
 
-.ajuda-container header .header-group {
+.help-container header .header-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,43 +44,42 @@ fieldset {
   padding: 15px;
 }
 
-.ajuda-container header .header-group .contact {
+.help-container header .header-group .contact {
   display: flex; 
   align-items: center;
 }
 
-.ajuda-container header .header-group .contact .phone-icon {
+.help-container header .header-group .contact .phone-icon {
   padding: 10px;
   border-radius: 50%;
   background: #6fc81c;
 }
 
-.ajuda-container header .header-group .contact .phone-icon svg {
+.help-container header .header-group .contact .phone-icon svg {
   color: black;
 }
 
-.ajuda-container header .header-group .contact .phone-icon svg path {
+.help-container header .header-group .contact .phone-icon svg path {
   stroke-width: 1;
 }
 
-.ajuda-container header .header-group .contact .title {
+.help-container header .header-group .contact .title {
   color: white;
   margin-left: 20px;
 }
 
-.ajuda-container header .header-group .contact .title h3 {
+.help-container header .header-group .contact .title h3 {
   font-size: 20px;
 }
 
-
-.ajuda-container main {
+.help-container main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 60px 40px 60px;
 }
 
-.ajuda-container main form {
+.help-container main form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +88,7 @@ fieldset {
   height: 400px;
 } 
 
-.ajuda-container main form .icon {
+.help-container main form .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,13 +101,13 @@ fieldset {
   border-radius: 50%;
 }
 
-.ajuda-container main form .icon svg {
+.help-container main form .icon svg {
   width: 100px;
   height: 100px;
   color: #6fc81e;
 }
 
-.ajuda-container main form fieldset {
+.help-container main form fieldset {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -116,25 +115,25 @@ fieldset {
   height: 100%;
 }
 
-.ajuda-container main form fieldset label[for="email"] {
+.help-container main form fieldset label[for="email"] {
   color: #000;
   font-style: italic;
   font-size: 17px;
   font-weight: bold;
 }
 
-.ajuda-container main form fieldset input {
+.help-container main form fieldset input {
   color: black;
   border: 1px solid #e1e1e1; 
   margin: 15px 0;
 }
 
-.ajuda-container main form fieldset input::placeholder {
+.help-container main form fieldset input::placeholder {
   font-style: normal;
   font-size: 16px;
 }
 
-.ajuda-container main form fieldset button {
+.help-container main form fieldset button {
   width: 100%;
   padding: 20px;
   color: #fff;
@@ -144,28 +143,30 @@ fieldset {
   border: none;
 }
 
-.ajuda-container main form fieldset p {
+.help-container main form fieldset p {
    color: gray;
    font-weight: 400;
 }
 
-.ajuda-container main form fieldset p a {
+.help-container main form fieldset p a {
    color: #6fc81c;
  }
 
-.ajuda-container footer { 
+.help-container footer { 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #1e1e20;
+  padding: 0 10px;
   color: #e1e1e1;
   height: 100%;
 }
 
-.ajuda-container footer .copyright {
+.help-container footer .copyright .about-us a {
+  text-decoration: underline;
 }
 
-.ajuda-container footer .developers {
+.help-container footer .developers {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -173,11 +174,11 @@ fieldset {
   height: 50px;
 }
 
-.ajuda-container footer .developers .title {
+.help-container footer .developers .title {
   font-size: 20px;
 }
 
-.ajuda-container footer .developers .subtitle {
+.help-container footer .developers .subtitle {
   font-weight: 400;
   padding-bottom: 10px;
 }

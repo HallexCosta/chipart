@@ -52,6 +52,10 @@ h1, h2 {
   background: #6fc81c;
 }
 
+.cart-container header .header-group .contact .phone-icon svg {
+  color: black;
+}
+
 .cart-container header .header-group .contact .phone-icon svg path {
   stroke-width: 1;
 }
@@ -142,11 +146,15 @@ h1, h2 {
 .cart-container footer { 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 10px;
   background: #121213;
   color: #e1e1e1;
   height: 110px;
-  /*margin-top: 117px;*/
+}
+
+.cart-container footer .copyright .about-us a {
+  text-decoration: underline;
 }
 
 .cart-container footer .developers {
