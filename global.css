@@ -22,6 +22,10 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 input::placeholder {
   font-style: italic;
   font-size: 12px;
