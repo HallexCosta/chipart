@@ -120,6 +120,10 @@ header {
   color: #6fc81e;
 }
 
+.border-bottom-focus:focus {
+  border-bottom: 2px solid #6fc81c;
+}
+
 /**
  * HOME
  */

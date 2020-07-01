@@ -103,7 +103,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   height: 100%;
 }
 
@@ -118,7 +118,9 @@ fieldset {
   color: black;
   border: 1px solid #e1e1e1; 
   margin: 15px 0;
+  padding: 20px;
 }
+
 
 .login-container main form fieldset input::placeholder {
   font-style: normal;
