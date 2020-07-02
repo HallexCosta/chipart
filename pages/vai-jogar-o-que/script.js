@@ -6,11 +6,16 @@ window.addEventListener('load', () => {
 
     itemsCard.map(({ title, image }) => {
       const card = createCard()
-      const img = createElementImage().setURL(`${image.url}.${image.extension}`)
-      const legend = createElementLegend().setContent(title)
+      const img = createElementImage()
+      const legend = createElementLegend()
 
-      card.add(img)
-      card.add(legend)
+      img.addClass('selected')
+      img.setURL(`${image.url}.${image.extension}`)
+
+      legend.setContent(title)
+
+      card.add(img.get())
+      card.add(legend.get())
       cards.appendChild(card.get())
     })
 
@@ -21,7 +26,7 @@ window.addEventListener('load', () => {
 
   function createCardsGroup(selector) {
     const cards = document.querySelector(selector)
-    //REMOVER ESSA FUNÇÃO
+
     const add = card => {
       cards.appendChild(card)
     }
@@ -32,31 +37,35 @@ window.addEventListener('load', () => {
     }
   }
 
-
   function createElementLegend() {
     const legend = document.createElement('legend')
 
     const setContent = (content) => {
       const title = document.createTextNode(content)
       legend.appendChild(title)
-      return legend
     }
 
     return {
-      setContent
+      setContent,
+      get: () => legend
     }
   }
-
+  
   function createElementImage() {
     const image = document.createElement('img')
 
+    const addClass = className => {
+      image.classList.add(className)
+    }
+
     const setURL = url => {
       image.setAttribute('src', url)
-      return image
     }
 
     return {
-      setURL
+      setURL,
+      addClass,
+      get: () => image
     }
   }
 
