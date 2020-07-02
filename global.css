@@ -95,6 +95,15 @@ header {
   font-size: 15px;
 }
 
+.container header .login-or-register a:hover .icon,
+.container header .login-or-register a:hover .text {
+  color: #6fc81e;
+}
+
+.container header .shopping-cart a:hover .card {
+  color: #6fc81e;
+}
+
 .container main {
   display: flex;
   flex-direction: column;
