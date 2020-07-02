@@ -35,8 +35,8 @@
         </div>
         <fieldset>
           <label for="email">DIGITE SEUS DADOS PARA CONTINUAR</label>
-          <input class="border-bottom-focus" type="email" placeholder="Insira seu email">
-          <input class="border-bottom-focus" type="text" placeholder="Insira sua senha">
+          <input class="border-bottom-focus" minlength="5" maxlength="42" type="email" placeholder="Insira seu email">
+          <input class="border-bottom-focus" minlength="5" maxlength="42" type="text" placeholder="Insira sua senha">
           <button type="submit">ENTRAR</button>
           <p>ou</p>
           <p>Não tem cadsatro? <a href="../cadastrar/index.html">Cadastre-se</a></p>
@@ -63,9 +63,6 @@
   <script>
     feather.replace()
   </script>
-  <script src="scripts.js"></script>
-  <script>
-    console.log('> Load index.html')
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
