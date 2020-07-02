@@ -29,6 +29,7 @@ button {
 input::placeholder {
   font-style: italic;
   font-size: 12px;
+  outline: 0;
 }
 
 input, select, textarea, p, label, a, legend, h1, h2, h3, h4 {
