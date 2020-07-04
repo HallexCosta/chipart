@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
   submitForm()
 
   function submitForm(){
-    window.addEventListener('submit', (e) => {
+    document.querySelector('#register').addEventListener('submit', (e) => {
       e.preventDefault()    
     })
   }

@@ -35,9 +35,15 @@
         </div>
         <fieldset>
           <label for="email">DIGITE SEUS DADOS PARA CONTINUAR</label>
-          <input class="border-bottom-focus" type="email" placeholder="Insira seu email">
+          <input
+            class="border-bottom-focus"
+            minlength="4"
+            maxlength="42"
+            type="email"
+            placeholder="Insira seu email"
+          >
           <textarea class="border-bottom-focus" placeholder="Informe sua critica ou sugestão aqui..."></textarea>
-          <button type="submit">ENVIAR</button>
+          <button id="register" type="submit">ENVIAR</button>
           <p>ou</p>
           <p>Já tem cadsatro? <a href="../login/index.html">Login</a></p>
         </fieldset>
