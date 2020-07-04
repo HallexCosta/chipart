@@ -41,7 +41,15 @@
           <div class="items-group">
             <div class="birthday">
               <label for="birthday">Data de nascimento</label>
-              <input class="border-bottom-focus" minlength="10" maxlength="10" type="text" placeholder="dd/mm/yyyy">
+              <input
+                id="date"
+                class="border-bottom-focus"
+                minlength="8"
+                maxlength="8"
+                type="text"
+                placeholder="dd/mm/yyyy"
+                onkeyup="handle.inputMasks.date(this.value)"
+              />
             </div>
             <div class="gender">
               <label for="gender">Sexo</label>
@@ -55,15 +63,48 @@
           <div class="items-group">
             <div class="cpf">
               <label for="cpf">CPF</label>
-              <input class="border-bottom-focus" minlength="14" maxlength="14" type="text" placeholder="xxx.xxx.xxx-xx">
+              <input
+                id="cpf"
+                class="border-bottom-focus"
+                minlength="11"
+                maxlength="11"
+                type="text"
+                placeholder="xxx.xxx.xxx-xx"
+                onkeyup="handle.inputMasks.cpf(this.value)"
+              />
             </div>
             <div class="phone">
               <label for="phone">Telefone</label>
-              <input class="border-bottom-focus" minlength="15" maxlength="15" type="text" placeholder="(99) 99999-9999">
+              <input
+                id="phone"
+                class="border-bottom-focus"
+                minlength="11"
+                maxlength="11"
+                type="text"
+                placeholder="(99) 99999-9999"
+                pattern=""
+                onkeyup="handle.inputMasks.phone(this.value)"
+              />
             </div>
           </div>
           <label for="password">Senha</label>
-          <input class="border-bottom-focus" minlength="6" maxlength="42" type="text" placeholder="Insira sua senha">
+          <input
+            id="password"
+            class="border-bottom-focus"
+            minlength="6"
+            maxlength="42"
+            type="password"
+            placeholder="Insira sua senha"
+          >
+          <label for="password">Confirm Senha</label>
+          <input
+            id="confirm-password"
+            class="border-bottom-focus"
+            minlength="6"
+            maxlength="42"
+            type="password"
+            placeholder="Confirme sua senha"
+          >
           <button type="submit">CADASTRAR</button>
           <p>ou</p>
           <p>Já tem cadsatro? <a href="../login/index.html">Login</a></p>
