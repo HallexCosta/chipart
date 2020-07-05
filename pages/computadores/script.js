@@ -16,20 +16,20 @@ window.addEventListener('load', () => {
       const icon = document.querySelector('.container aside .list-product .vertical li i')
       const { plus, minus } = icons
       buttonCategorias.addEventListener('click', () => {
-        console.log('Clicked')
+        //console.log('Clicked')
         changeIcons()
         expandCategories()
       })
 
       changeIcons = () => {
         const currentClass = icon.getAttribute('class')
-        console.log(`Current class: ${currentClass}`)
+        //console.log(`Current class: ${currentClass}`)
         if (currentClass == plus) {
-          console.log(`Change ${plus} for ${minus}`)
+          //console.log(`Change ${plus} for ${minus}`)
           icon.classList.remove(plus)
           icon.classList.add(minus)
         } else {
-          console.log(`Change ${minus} for ${plus}`)
+          //console.log(`Change ${minus} for ${plus}`)
           icon.classList.remove(minus)
           icon.classList.add(plus)
         }
@@ -49,13 +49,13 @@ window.addEventListener('load', () => {
     addClassActivedOnLinkClicked = () => {
       const links = document.querySelectorAll('.container aside .list-product .vertical .items li a')
       
-      console.log('Call addClassActivedOnLinkClicked')
+      //console.log('Call addClassActivedOnLinkClicked')
 
       links.forEach(link => {
         link.addEventListener(('click'), () => {
           links.forEach(link => {
             link.style.color = '#000'
-            console.log('Load black color in', link)
+            //console.log('Load black color in', link)
           })
           link.style.color = '#6fc81e'
         })
@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
       const run = () => {
         if (controlRecursive !== Number(recursive)) {
           cards.innerHTML += '<div class="card">' + card.innerHTML + '</div>'          
-          console.log(controlRecursive)
+          //console.log(controlRecursive)
           controlRecursive += 1
           run()
         }
